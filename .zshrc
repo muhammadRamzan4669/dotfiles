@@ -10,11 +10,11 @@ autoload -U compinit && compinit
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-source $HOME/zsh-plugins/fzf-tab/fzf-tab.zsh
-source $HOME/zsh-plugins/git/git.plugin.zsh
-source $HOME/zsh-plugins/sudo/sudo.plugin.zsh
-source $HOME/zsh-plugins/command-not-found/command-not-found.plugin.zsh
-source $HOME/zsh-plugins/archlinux/archlinux.plugin.zsh
+source $HOME/.plugins/zsh/fzf-tab/fzf-tab.zsh
+source $HOME/.plugins/zsh/git/git.plugin.zsh
+source $HOME/.plugins/zsh/sudo/sudo.plugin.zsh
+source $HOME/.plugins/zsh/command-not-found/command-not-found.plugin.zsh
+source $HOME/.plugins/zsh/archlinux/archlinux.plugin.zsh
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
