@@ -42,3 +42,7 @@
   path = external/zsh/zsh-syntax-highlighting
   url = https://github.com/zsh-users/zsh-syntax-highlighting.git
   branch = master
+[submodule "external/zsh/powerlevel10k"]
+	path = external/zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+  branch = master
