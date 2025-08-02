@@ -1,0 +1,44 @@
+[submodule "external/tmux/catppuccin-tmux"]
+  path = external/tmux/catppuccin-tmux
+  url = https://github.com/catppuccin/tmux.git
+  branch = main
+
+[submodule "external/tmux/tmux-sensible"]
+  path = external/tmux/tmux-sensible
+  url = https://github.com/tmux-plugins/tmux-sensible.git
+  branch = master
+
+[submodule "external/tmux/tmux-yank"]
+  path = external/tmux/tmux-yank
+  url = https://github.com/tmux-plugins/tmux-yank.git
+  branch = master
+
+[submodule "external/tmux/vim-tmux-navigator"]
+  path = external/tmux/vim-tmux-navigator
+  url = https://github.com/christoomey/vim-tmux-navigator.git
+  branch = master
+
+[submodule "external/zsh/fzf-tab"]
+  path = external/zsh/fzf-tab
+  url = https://github.com/Aloxaf/fzf-tab.git
+  branch = master
+
+[submodule "external/zsh/ohmyzsh"]
+  path = external/zsh/ohmyzsh
+  url = https://github.com/ohmyzsh/ohmyzsh.git
+  branch = master
+
+[submodule "external/zsh/zsh-autosuggestions"]
+  path = external/zsh/zsh-autosuggestions
+  url = https://github.com/zsh-users/zsh-autosuggestions.git
+  branch = master
+
+[submodule "external/zsh/zsh-completions"]
+  path = external/zsh/zsh-completions
+  url = https://github.com/zsh-users/zsh-completions.git
+  branch = master
+
+[submodule "external/zsh/zsh-syntax-highlighting"]
+  path = external/zsh/zsh-syntax-highlighting
+  url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+  branch = master
