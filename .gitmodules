@@ -45,3 +45,7 @@
 	path = external/tmux/catppuccin-tmux
 	url = https://github.com/elliottminns/catppuccin-tmux.git
   branch = main
+[submodule "external/tmux/tokyo-night-tmux"]
+	path = external/tmux/tokyo-night-tmux
+	url = https://github.com/janoamaral/tokyo-night-tmux.git
+  branch = master
