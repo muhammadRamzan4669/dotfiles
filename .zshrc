@@ -9,7 +9,7 @@ autoload -U compinit && compinit
 
 source $HOME/external/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/external/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source $HOME/external/zsh/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/external/zsh/fzf-tab/fzf-tab.zsh
 source $HOME/external/zsh/ohmyzsh/plugins/git/git.plugin.zsh
 source $HOME/external/zsh/ohmyzsh/plugins/sudo/sudo.plugin.zsh
