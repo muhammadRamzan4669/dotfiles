@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+fpath=($HOME/external/zsh/zsh-completions/src $fpath)
+
 autoload -U compinit && compinit 
 
 source $HOME/external/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -15,7 +17,6 @@ source $HOME/external/zsh/ohmyzsh/plugins/git/git.plugin.zsh
 source $HOME/external/zsh/ohmyzsh/plugins/sudo/sudo.plugin.zsh
 source $HOME/external/zsh/ohmyzsh/plugins/command-not-found/command-not-found.plugin.zsh
 source $HOME/external/zsh/ohmyzsh/plugins/archlinux/archlinux.plugin.zsh
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
