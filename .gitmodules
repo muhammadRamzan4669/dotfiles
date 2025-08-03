@@ -41,10 +41,6 @@
 	path = external/zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
   branch = master
-[submodule "external/tmux/catppuccin-tmux"]
-	path = external/tmux/catppuccin-tmux
-	url = https://github.com/elliottminns/catppuccin-tmux.git
-  branch = main
 [submodule "external/tmux/tokyo-night-tmux"]
 	path = external/tmux/tokyo-night-tmux
 	url = https://github.com/janoamaral/tokyo-night-tmux.git
