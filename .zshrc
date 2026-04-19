@@ -71,3 +71,4 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 export EDITOR="nvim"
+export PATH="$HOME/.local/bin:$PATH"
