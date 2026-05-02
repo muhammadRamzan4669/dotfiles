@@ -26,6 +26,7 @@ zinit light Aloxaf/fzf-tab
 # Snippets
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::archlinux
 
 autoload -Uz compinit && compinit
 zinit cdreplay -q
@@ -63,12 +64,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
-alias vim='nvim'
-alias c='clear'
+alias z='zeditor'
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export EDITOR="nvim"
-export PATH="$HOME/.local/bin:$PATH"
+export EDITOR="zeditor"
