@@ -9,7 +9,7 @@ chsh -s /usr/bin/zsh $USER
 
 # Essential Setup :
 ```
-mkdir -p "$HOME/.config/"{alacritty,kitty,niri}
+mkdir -p "$HOME/.config/"{alacritty,kitty,niri,tmux}
 ```
 
 # top tracker setup:
@@ -22,11 +22,4 @@ curl -s https://api.github.com/repos/Alexander-Calderon/TopTracker-Linux-Univers
 | grep "browser_download_url.*AppImage" \
 | cut -d '"' -f 4 \
 | xargs curl -L -O
-```
-
-# Alacritty Themes setup:
-
-```
-mkdir -p ~/.config/alacritty/themes
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 ```
