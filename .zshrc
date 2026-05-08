@@ -70,4 +70,4 @@ alias z='zeditor'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export EDITOR="zeditor"
+export EDITOR="nvim"
