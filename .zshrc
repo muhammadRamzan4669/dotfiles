@@ -35,10 +35,31 @@ zinit cdreplay -q
 
 # Keybindings
 bindkey -e
-bindkey '^f' forward-word
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
+
+# Accept autosuggestion up to next / or full if no /
+_accept_to_slash() {
+  if [[ -n "$POSTDISPLAY" ]]; then
+    if [[ "$POSTDISPLAY" == */* ]]; then
+      local prefix="${POSTDISPLAY%%/*}"
+      local n=$(( ${#prefix} + 1 ))
+      BUFFER="${BUFFER}${POSTDISPLAY:0:$n}"
+      POSTDISPLAY="${POSTDISPLAY:$n}"
+      CURSOR=${#BUFFER}
+    else
+      BUFFER="${BUFFER}${POSTDISPLAY}"
+      POSTDISPLAY=""
+      CURSOR=${#BUFFER}
+    fi
+    region_highlight=("${#BUFFER} $(( ${#BUFFER} + ${#POSTDISPLAY} )) ${ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE:-fg=8}")
+  else
+    zle forward-char
+  fi
+}
+zle -N _accept_to_slash
+bindkey '^f' _accept_to_slash
 
 WORDCHARS=${WORDCHARS//\/}
 
