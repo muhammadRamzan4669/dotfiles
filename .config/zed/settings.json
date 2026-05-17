@@ -1,0 +1,107 @@
+{
+  "ssh_connections": [
+    {
+      "host": "github.com",
+      "args": [],
+      "projects": []
+    }
+  ],
+  "icon_theme": "Catppuccin Mocha",
+
+  "language_models": {
+    "openai_compatible": {
+      "FreeAPI": {
+        "api_url": "https://aiapiv2.pekpik.com/v1",
+        "available_models": [
+          {
+            "name": "gemini-2.5-flash",
+            // "name": "kimi-k2.5",
+            "display_name": "LYNX Kimi",
+            "max_tokens": 32768,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          },
+        ],
+      },
+      "Baseten": {
+        "api_url": "https://inference.baseten.co/v1",
+        "available_models": [
+          {
+            "name": "moonshotai/Kimi-K2.6",
+            // "name": "kimi-k2.5",
+            "display_name": "Kimi K2.6",
+            "max_tokens": 32768,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+        ],
+      },
+    },
+  },
+
+  "session": {
+    "trust_all_worktrees": true,
+  },
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+    },
+  },
+  "cli_default_open_behavior": "new_window",
+  "relative_line_numbers": "enabled",
+  "tab_size": 2,
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "tool_permissions": {
+      "tools": {
+        "fetch": {
+          "default": "allow",
+        },
+        "terminal": {
+          "default": "allow",
+        },
+      },
+    },
+    "default_profile": "write",
+    "default_model": {
+      "provider": "Baseten",
+      "model": "moonshotai/Kimi-K2.6",
+      "enable_thinking": false,
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+}
