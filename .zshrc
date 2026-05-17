@@ -65,9 +65,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias z='zeditor'
+alias sz='sudoedit'
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export EDITOR="nvim"
+export EDITOR="zeditor"
